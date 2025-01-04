@@ -1,5 +1,5 @@
 {
-    "name": "article",
+    "name": "articles",
     "sections": {
         "template": {
             "type": "template-article"
