@@ -2,3 +2,4 @@
 <small>{{ article.author }}</small>             
 <time>{{ article.published_at | date: "%Y, %b, %d" }}</time>
 <img src="{{ article.image | img_url}}">
+<p>{{ article.excerpt_or_content }}</p>
