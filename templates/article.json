@@ -1,4 +1,5 @@
 {
+    "name": "blog article",
     "sections": {
         "template": {
             "type": "template-article"
