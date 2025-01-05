@@ -20,7 +20,7 @@
                     "type": "article_content"
                 }
             },
-            "block_order": ["title", "author", "published_date", "thumbnail", "content"]
+            "block_order": ["title", "thumbnail", "published_date", "author", "content"]
         }
     },
     "order": ["template"]
