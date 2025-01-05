@@ -1,6 +1,13 @@
 <h1>{{ article.title }}</h1>
-<small>{{ article.author }}</small>             
-<time>{{ article.published_at | date: "%Y, %b, %d" }}</time>
+
+{% if section.settings.enable_author %}
+    <small>{{ article.author }}</small>
+{% endif %}
+             
+{% if section.settings.enable_published_date %}
+    <time>{{ article.published_at | date: "%Y, %b, %d" }}</time>
+{% endif %}
+
 <img src="{{ article.image | img_url: 'large'}}" alt="{{ article.image.alt }}">
 
 <div>{{ article.content }}</div>
@@ -19,7 +26,7 @@
                 "type": "checkbox",
                 "id": "enable_published_date",
                 "default": true,
-                "label": "Display published date"
+                "label": "Display Published date"
             }
         ]
 }
